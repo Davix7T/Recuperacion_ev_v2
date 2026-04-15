@@ -19,6 +19,16 @@ public class EmployeeRequest {
     @PositiveOrZero(message = "salary must be >= 0")
     private Double salary;
 
+    private Long departmentId;
+
+    public Long getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(Long departmentId) {
+        this.departmentId = departmentId;
+    }
+
     public String getName() {
         return name;
     }
